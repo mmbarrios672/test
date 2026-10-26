@@ -1,0 +1,84 @@
+{
+  "municipio": {
+    "nombre": "Gines",
+    "provincia": "Sevilla",
+    "comarca": "Aljarafe",
+    "comunidad_autonoma": "Andalucía",
+    "coordenadas_aprox": { "lat": 37.3875, "lon": -6.0781 },
+    "municipios_limitrofes": ["Castilleja de la Cuesta", "Bormujos", "Espartinas", "Valencina de la Concepción", "Castilleja de Guzmán"]
+  },
+  "carreteras": [
+    {
+      "codigo": "A-49",
+      "nombre": "Autovía del Quinto Centenario (Sevilla - Huelva - Frontera de Portugal)",
+      "tipo": "autovía",
+      "red": "Red de Carreteras del Estado",
+      "titular": "Ministerio de Transportes y Movilidad Sostenible",
+      "itinerario_europeo": "E-1",
+      "relacion_con_gines": "Cruza el término municipal por el sur; principal acceso de alta capacidad",
+      "accesos_a_gines": [
+        { "salida": "5", "conexion": "A-8062", "direccion": "Gines" }
+      ],
+      "conecta_con": ["SE-30", "SE-40", "A-8062"]
+    },
+    {
+      "codigo": "A-8062",
+      "nombre": "Carretera autonómica (tramo urbano: Calle Colón)",
+      "tipo": "carretera convencional",
+      "red": "Red Autonómica de Andalucía (red complementaria metropolitana)",
+      "titular": "Junta de Andalucía",
+      "relacion_con_gines": "Atraviesa el casco urbano y une Gines con la A-49",
+      "tramos_urbanos": ["Calle Colón"],
+      "conecta_con": ["A-49", "A-8076"]
+    },
+    {
+      "codigo": "A-8076",
+      "nombre": "Carretera de Sevilla a Huelva (antigua N-431)",
+      "tipo": "carretera convencional",
+      "red": "Red Autonómica de Andalucía",
+      "titular": "Junta de Andalucía",
+      "relacion_con_gines": "Eje oeste: conecta Gines con Espartinas, Umbrete y Sanlúcar la Mayor",
+      "municipios_que_recorre": ["Castilleja de la Cuesta", "Gines", "Espartinas", "Sanlúcar la Mayor"],
+      "estado_y_actuaciones": [
+        "Espartinas reclamó en abril de 2026 reasfaltado por deterioro del firme",
+        "Prevista conexión directa con la SE-40 en el tramo Espartinas-Valencina"
+      ],
+      "conecta_con": ["A-8062", "A-8075", "SE-40"]
+    },
+    {
+      "codigo": "A-8077",
+      "nombre": "Carretera de Camas a Sanlúcar la Mayor (Aljarafe Norte)",
+      "tipo": "carretera convencional",
+      "red": "Red Autonómica de Andalucía",
+      "titular": "Junta de Andalucía",
+      "relacion_con_gines": "Discurre al norte del término; acceso hacia Valencina, Camas y Sevilla norte",
+      "municipios_que_recorre": ["Camas", "Valencina de la Concepción", "Salteras", "Olivares", "Villanueva del Ariscal", "Albaida del Aljarafe", "Sanlúcar la Mayor"],
+      "conecta_con": ["SE-30", "A-66", "SE-40"]
+    },
+    {
+      "codigo": "SE-40",
+      "nombre": "Autovía de circunvalación exterior de Sevilla",
+      "tipo": "autovía",
+      "red": "Red de Carreteras del Estado",
+      "titular": "Ministerio de Transportes y Movilidad Sostenible",
+      "relacion_con_gines": "Pasa al oeste (enlace con A-49); tramo Espartinas-Valencina adjudicado, obras pendientes de inicio a comienzos de 2026",
+      "estado": "parcialmente en servicio / en obras",
+      "conecta_con": ["A-49", "A-8076", "A-8077"]
+    },
+    {
+      "codigo": "SE-30",
+      "nombre": "Ronda de circunvalación de Sevilla",
+      "tipo": "autovía",
+      "red": "Red de Carreteras del Estado",
+      "titular": "Ministerio de Transportes y Movilidad Sostenible",
+      "relacion_con_gines": "No pasa por el término; se accede por la A-49 hacia Sevilla",
+      "conecta_con": ["A-49", "A-66", "A-8077"]
+    }
+  ],
+  "notas": [
+    "Datos recopilados de fuentes públicas (mapas de ruido CEDEX, Ayuntamiento de Espartinas, rutas OSM/calcularruta) en octubre de 2026.",
+    "Las coordenadas son aproximadas y no se incluyen puntos kilométricos exactos; verificar con el Catálogo de Carreteras de la Junta de Andalucía o el IECA antes de uso oficial.",
+    "Para geometría real de las vías, exportar de OpenStreetMap (Overpass API) filtrando highway=* dentro del límite administrativo de Gines."
+  ],
+  "fecha_generacion": "2026-10-26"
+}
